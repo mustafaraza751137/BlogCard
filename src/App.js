@@ -60,7 +60,7 @@ class App extends Component {
     })
     return (
       <div className="App">
-        <button onClick={this.onHideBtnClick}>{this.state.showBlogs ? 'Hide List' : 'Show List'}</button><br></br>
+        <button onClick={this.onHideBtnClick} className="Button">{this.state.showBlogs ? 'Hide List' : 'Show List'}</button><br></br>
         {
           this.state.showBlogs ? blogCards : null
         }
